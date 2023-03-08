@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contato - Barbearia Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Tilt+Prism&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><a href="index.html"> <img src="./assets/logo.png" alt="Logo da Barbearia Alura"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>        
+        </header>
+        <main class="main-contato">
+            <form>
+               <fieldset id="dados-do-cliente">
+                    <label for="nomesobrenome" class="dadoscliente">Nome e Sobrenome <em>*</em></label>
+                    <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                    <label for="email" class="dadoscliente">Email <em>*</em></label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="email@.com">
+
+                    <label for="telefone" class="dadoscliente">Telefone <em>*</em></label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                    
+                    <label for="comentario" class="dadoscliente">Comentário</label>
+                    <textarea cols="70" rows="10" id="comentario" class="input-padrao"></textarea>
+                </fieldset>
+                <fieldset id="preferencia-de-contato">
+                    <legend>Preferencia para contato.</legend>
+                    <label for="Cabelo" class="contatoaocliente"><input type="radio" name="tipo-de-contato" value="Cabelo" id="Cabelo" checked>Email</label>
+                    
+                    <label for="Barba" class="contatoaocliente"><input type="radio" name="tipo-de-contato" value="Barba" id="Barba" class="input-radio">Telefone</label>
+                    
+                    <label for="Cabelo+Barba" class="contatoaocliente"><input type="radio" name="tipo-de-contato" value="Cabelo+Barba" id="Cabelo+Barba" class="input-radio">WhatsApp</label>
+                </fieldset>    
+                <fieldset id="escolha-de-horario">
+                    <legend>Qual horario gostaria de agendar seu corte?</legend>
+                    
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                    
+                    <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+                </fieldset>
+                <input type="submit" value="Enviar Formulário" class="enviar">
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <div class="rodape">
+                <h3><a href="index.html"> <img src="./assets/logo-branco.png" alt="Logo da Barbearia Alura"></a></h3>
+                <p class="copy">&copy; Copyright Barbearia Alura - 2019</p>
+            </div>
+        </footer>
+    </body>
+</html>    
